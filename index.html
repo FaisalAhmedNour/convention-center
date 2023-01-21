@@ -21,10 +21,11 @@
     <!-- header -->
     <header class="mb-5">
         <nav class="navbar px-5 py-4">
-            <div class="container-fluid d-flex flex-row justify-content-between">
-                <a class="navbar-brand" style="font-size: 1.5rem; font-weight: 700;" href="#">Abacus Convention
+            <div
+                class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-baseline align-items-sm-center">
+                <a class="navbar-brand" style="font-size: 1.2rem; font-weight: 700;" href="#">Abacus Convention
                     Center</a>
-                <ul class="navbar-nav d-flex flex-row">
+                <ul class="navbar-nav d-flex flex-column flex-sm-row">
                     <li class="nav-item ms-5" style="font-weight: 700;">
                         <a href="#" class="nav-link">Home</a>
                         </p>
@@ -105,9 +106,9 @@
     </header>
     <main class="mx-auto" style="width: 80%;">
         <!-- Memories -->
-        <div class="d-flex flex-row align-items-center mb-5">
-            <img src="images/wedding.png" class="me-4">
-            <div class="ms-4">
+        <div class="d-flex flex-md-row flex-column-reverse align-items-center mb-5">
+            <img src="images/wedding.png" class="me-4 w-100">
+            <div class="ms-4 mb-5 mb-md-0">
                 <h3 style="font-weight: 700;">Every moment is Precious</h3>
                 <p style="font-size: 16px; font-weight: 600; col mx-2or: cadetblue;">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor
@@ -122,11 +123,12 @@
         </div>
         <!-- packages -->
         <div class="my-5">
-            <h1 class="text-center pb-5">Our package</h1>
+            <h1 class="text-center pb-md-5 pb-0 justify-content-between">Our package</h1>
             <div class="row">
-                <div class="col mx-2 text-primary">
+                <!-- 1 -->
+                <div class="col-12 col-sm-5 col-lg mx-0 text-primary">
                     <br><br>
-                    <h1 class="my-5">$300</h1>
+                    <h1 class="my-lg-5 my-0 mb-3">$300</h1>
                     <h2>Business fair</h2>
                     <p>
                         For most businesses event like book fair, craft fair.
@@ -140,9 +142,10 @@
                         Choose plan
                     </button>
                 </div>
-                <div class="col mx-2 text-primary">
+                <!-- 2 -->
+                <div class="col-12 col-sm-6 col-lg mx-0 text-primary mb-5">
                     <br><br>
-                    <h1 class="my-5">$500</h1>
+                    <h1 class="my-md-5 my-0 mb-3">$500</h1>
                     <h2>Wedding basic</h2>
                     <p>
                         For weddings with basic plan and limited item
@@ -156,8 +159,9 @@
                         Choose plan
                     </button>
                 </div>
-                <div class="col mx-2 bg-primary text-light rounded-5 position-relative">
-                    <h1 class="my-5">$800</h1>
+                <!-- 3 -->
+                <div class="col-12 col-sm-6 col-lg mx-0 bg-primary text-light rounded-5 position-relative">
+                    <h1 class="my-md-5 my-0 mb-3">$800</h1>
                     <h2>Wedding plus</h2>
                     <p>
                         For most weddings with premium plans
@@ -175,9 +179,10 @@
                     </button>
                     <br><br>
                 </div>
-                <div class="col mx-2 text-primary">
+                <!-- 4 -->
+                <div class="col-12 col-sm-5 col-lg mx-2 text-primary">
                     <br><br>
-                    <h1 class="my-5">$1200</h1>
+                    <h1 class="my-md-5 my-0 mb-3">$1200</h1>
                     <h2>Corporate event</h2>
                     <p>
                         For most corporate business <br> events
@@ -196,7 +201,7 @@
         <!-- Happy clients -->
         <div class="my-5">
             <h1 class="text-center m-5">Happy Clients says</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-0 my-md-5">
                 <div class="col">
                     <div class="card border border-0 shadow-lg">
                         <div class="card-body text-center">
@@ -254,105 +259,111 @@
             </div>
         </div>
         <!-- Questions -->
-        <div>
-            <h1>Frequently Asked Questions</h1>
-            <div class="d-flex flex-row overflow-none" style="gap: 1.5rem;">
-                <div class="w-100">
-                    <!-- 1 -->
-                    <div class="overflow-hidden border border-1">
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            <a class="text-dark w-100 text-decoration-none border border-0 p-0"
-                                style="font-size: 1.2rem; font-weight: 700;" data-bs-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
+        <div class="d-flex flex-column flex-md-row overflow-none" style="gap: 1.2rem;">
+            <div>
+                <h1 class="text-center">Frequently Asked Questions</h1>
+                <div class="overflow-none" style="gap: 1.5rem;">
+                    <div class="w-100">
+                        <!-- 1 -->
+                        <div class="overflow-hidden border border-1 w-100">
+                            <button class="btn w-100 text-start" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <a class="text-dark w-100 text-decoration-none border border-0 p-0"
+                                    style="font-size: 1.2rem; font-weight: 700;" data-bs-toggle="collapse"
+                                    href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    What's the difference between event design and event planning?
+                                </a>
+                                <img src="icons/ctor.svg" style="width: 0.8rem;">
+                            </button>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body border border-0 p-4 pt-0 m-0"
+                                    style="font-weight: 600; color: rgb(154, 164, 167);">
+                                    Event design and event planning work hand in hand to deliver a
+                                    successful event.Events by Knight offer tailor made events. This
+                                    means we incorporate both event design and event planning to
+                                    create that perfect event.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="overflow-hidden border border-1 w-100">
+                            <button class="btn w-100 text-start" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample1" aria-expanded="false"
                                 aria-controls="collapseExample">
-                                What's the difference between event design and event planning?
+                                <a class="text-dark w-100 text-decoration-none border border-0 p-4 pb-0 m-0 ps-1 "
+                                    style="font-size: 1.2rem; font-weight: 700;" data-bs-toggle="collapse"
+                                    href="#collapseExample1" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    How early do we need to start planning an event
+                                    <img src="icons/ctor.svg" style="width: 0.8rem;">
+                            </button>
                             </a>
-                            <img src="icons/ctor.svg" style="width: 0.8rem;">
-                        </button>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body border border-0 p-4 pt-0 m-0"
-                                style="font-weight: 600; color: rgb(154, 164, 167);">
-                                Event design and event planning work hand in hand to deliver a
-                                successful event.Events by Knight offer tailor made events. This
-                                means we incorporate both event design and event planning to
-                                create that perfect event.
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card card-body border border-0 p-4 pt-0 m-0"
+                                    style="font-weight: 600; color: rgb(154, 164, 167);">
+                                    Event design and event planning work hand in hand to deliver a
+                                    successful event.Events by Knight offer tailor made events. This
+                                    means we incorporate both event design and event planning to
+                                    create that perfect event.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- 2 -->
-                    <div class="overflow-hidden border border-1">
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            <a class="text-dark w-100 text-decoration-none border border-0 p-4 pb-0 m-0 ps-1 "
-                                style="font-size: 1.2rem; font-weight: 700;" data-bs-toggle="collapse"
-                                href="#collapseExample1" role="button" aria-expanded="false"
+                        <!-- 3 -->
+                        <div class="overflow-hidden border border-1 w-100">
+                            <button class="btn w-100 text-start" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample2" aria-expanded="false"
                                 aria-controls="collapseExample">
-                                How early do we need to start planning an event
-                                <img src="icons/ctor.svg" style="width: 0.8rem;">
-                        </button>
-                        </a>
-                        <div class="collapse" id="collapseExample1">
-                            <div class="card card-body border border-0 p-4 pt-0 m-0"
-                                style="font-weight: 600; color: rgb(154, 164, 167);">
-                                Event design and event planning work hand in hand to deliver a
-                                successful event.Events by Knight offer tailor made events. This
-                                means we incorporate both event design and event planning to
-                                create that perfect event.
+                                <a class="text-dark w-100 text-decoration-none border border-0 p-4 pb-0 m-0 ps-1 "
+                                    style="font-size: 1.2rem; font-weight: 700;" data-bs-toggle="collapse"
+                                    href="#collapseExample2" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    What is your refund and cancellation policy?
+                                    <img src="icons/ctor.svg" style="width: 0.8rem;">
+                            </button>
+                            </a>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card card-body border border-0 p-4 pt-0 m-0"
+                                    style="font-weight: 600; color: rgb(154, 164, 167);">
+                                    Event design and event planning work hand in hand to deliver a
+                                    successful event.Events by Knight offer tailor made events. This
+                                    means we incorporate both event design and event planning to
+                                    create that perfect event.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- 3 -->
-                    <div class="overflow-hidden border border-1">
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            <a class="text-dark w-100 text-decoration-none border border-0 p-4 pb-0 m-0 ps-1 "
-                                style="font-size: 1.2rem; font-weight: 700;" data-bs-toggle="collapse"
-                                href="#collapseExample2" role="button" aria-expanded="false"
+                        <!-- 4 -->
+                        <div class="overflow-hidden border border-1 w-100">
+                            <button class="btn w-100 text-start" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample3" aria-expanded="false"
                                 aria-controls="collapseExample">
-                                What is your refund and cancellation policy?
-                                <img src="icons/ctor.svg" style="width: 0.8rem;">
-                        </button>
-                        </a>
-                        <div class="collapse" id="collapseExample2">
-                            <div class="card card-body border border-0 p-4 pt-0 m-0"
-                                style="font-weight: 600; color: rgb(154, 164, 167);">
-                                Event design and event planning work hand in hand to deliver a
-                                successful event.Events by Knight offer tailor made events. This
-                                means we incorporate both event design and event planning to
-                                create that perfect event.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 4 -->
-                    <div class="overflow-hidden border border-1">
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            <a class="text-dark w-100 text-decoration-none border border-0 p-4 pb-0 m-0 ps-1 "
-                                style="font-size: 1.2rem; font-weight: 700;" data-bs-toggle="collapse"
-                                href="#collapseExample3" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                How do you keep budgets on track?
-                                <img src="icons/ctor.svg" style="width: 0.8rem;">
-                        </button>
-                        </a>
-                        <div class="collapse" id="collapseExample3">
-                            <div class="card card-body border border-0 p-4 pt-0 m-0"
-                                style="font-weight: 600; color: rgb(154, 164, 167);">
-                                Event design and event planning work hand in hand to deliver a
-                                successful event.Events by Knight offer tailor made events. This
-                                means we incorporate both event design and event planning to
-                                create that perfect event.
+                                <a class="text-dark w-100 text-decoration-none border border-0 p-4 pb-0 m-0 ps-1 "
+                                    style="font-size: 1.2rem; font-weight: 700;" data-bs-toggle="collapse"
+                                    href="#collapseExample3" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    How do you keep budgets on track?
+                                    <img src="icons/ctor.svg" style="width: 0.8rem;">
+                            </button>
+                            </a>
+                            <div class="collapse" id="collapseExample3">
+                                <div class="card card-body border border-0 p-4 pt-0 m-0"
+                                    style="font-weight: 600; color: rgb(154, 164, 167);">
+                                    Event design and event planning work hand in hand to deliver a
+                                    successful event.Events by Knight offer tailor made events. This
+                                    means we incorporate both event design and event planning to
+                                    create that perfect event.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="images/people.png" class="w-100">
             </div>
+            <img src="images/people.png" class="w-lg-50 w-100">
         </div>
     </main>
-    <footer class="d-flex flex-row justify-content-between align-items-center p-5 mt-5 text-light" style="background-color: rgb(17, 1, 20);">
-        <div class="px-5">
+    <footer class="d-flex flex-column flex-md-row justify-content-between align-items-center p-5 mt-5 text-light"
+        style="background-color: rgb(17, 1, 20);">
+        <div class="px-md-5">
             <p>© 2020 bike. All rights reserved</p>
         </div>
         <div class="d-flex flex-column px-5">
